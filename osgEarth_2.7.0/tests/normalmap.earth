@@ -1,0 +1,24 @@
+<!--
+osgEarth Sample - Shows an elevation-derived normal map.
+-->
+<map name="readymap.org" type="geocentric">
+    
+    <options>
+        <terrain first_lod="1"/>
+    </options>
+    
+  <image name="全球卫星影像" driver="flatgis">
+    <url>http://192.168.1.4/data/image512x512flat/SatelliteTile</url>
+    <cachepath>D:/cache_flat/satellite1</cachepath>
+  </image>
+        
+  <elevation name="全球数字高程" driver="flatgis">
+    <url>http://192.168.1.4/data/dem15x15flat</url>
+    <cachepath>D:/cache_flat/heightfield1</cachepath>
+  </elevation>
+    
+    <extensions>
+        <normalmap/>
+        <sky/>
+    </extensions>
+</map>
