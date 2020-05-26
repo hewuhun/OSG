@@ -1,0 +1,19 @@
+QWidget
+{
+	border: 1px solid rgba(44.0, 80.0, 114.0, 255.0); 
+}
+
+QSplitter
+{
+	border:0px;
+}
+
+QSplitter::handle 
+{
+    background-color: transparent;
+}
+ 
+QSplitter::handle:vertical
+{
+    height: 4px;
+}

@@ -1,0 +1,68 @@
+QFrame 
+{
+	border: 1px solid white;
+	margin-top:8px;
+}
+QMenu
+{
+	background-image:url(:/image_new/icon_press.png);
+	border:0px solid rgba(0,0,0,0); 
+	font-size:14px;
+	font-family:"微软雅黑";
+	width:36px;
+}
+QMenu::item
+{
+	background-color:rgba(17,33,48,255);
+	padding:0px 0px 0px 0px;
+	color:white;
+	height:36px;
+	width:36px;
+}
+QMenu::item:pressed
+{
+	background-image:url(:/images/menu/icon_press.png);
+}
+QToolButton
+{	
+	border:0px;
+	spacing:3px;
+}
+QToolButton:hover 
+{
+	border:0px solid rgba(161,208,255,255); 
+	background-image:url(:/images/menu/icon_hover.png);
+}
+QToolButton:pressed 
+{
+	border:0px solid rgba(16,30,45,255); 
+	background-image:url(:/images/menu/icon_press.png);
+}
+QToolButton:checked 
+{
+	border:0px solid rgba(16,30,45,255); 
+	background-image:url(:/images/menu/icon_press.png);
+}
+QToolButton[popupMode="1"]
+{  
+	padding-right: 0px;  
+} 
+QToolButton::menu-button 
+{  
+	border: 0px solid;  
+	border-top-right-radius: 0px;  
+	border-bottom-right-radius: 0px;  
+	width: 5px;  
+}
+QToolButton::menu-arrow
+{  
+	image:url(:/images/menu/downbutton_normal.png);
+	subcontrol-position: right bottom;
+	subcontrol-origin: padding;
+}  
+QToolButton::menu-arrow:open 
+{  
+	image:url(:/images/menu/downbutton_press.png);
+	subcontrol-position: right bottom;
+	subcontrol-origin: padding;
+}

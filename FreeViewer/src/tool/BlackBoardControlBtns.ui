@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlackBoardControlBtns_Widget</class>
+ <widget class="QWidget" name="BlackBoardControlBtns_Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>94</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CBlackBoardControlBtns</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>27</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btn_line">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Line</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_circle">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Circle</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_rect">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Rect</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_mouse">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Mouse</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_color">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Color</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_clear">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_exit">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { color: white; padding: 5px 10px 5px 10px; border:  1px solid rgb(0,160,234); background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}
+QPushButton:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(76, 173, 254, 255), stop:1 rgba(71, 122, 165, 255));}
+QPushButton:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 152, 231, 255), stop:1 rgba(2, 36, 71, 255));}</string>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>27</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../resource/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

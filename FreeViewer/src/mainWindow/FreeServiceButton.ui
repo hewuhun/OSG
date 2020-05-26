@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FreeServiceButton</class>
+ <widget class="QWidget" name="FreeServiceButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>373</width>
+    <height>51</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Folder Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_update">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { width: 32px; height: 17px; border-image: url(:/images/icon/update_normal.png);}
+QPushButton:hover {width: 32px; height: 17px; border-image: url(:/images/icon/update_hover.png);}
+QPushButton:pressed { width: 32px; height: 17px; border-image: url(:/images/icon/update_pressed.png);}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_expand">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { width: 32px; height: 17px; border-image: url(:/images/icon/expand_normal.png);}
+QPushButton:hover { width: 32px; height: 17px; border-image: url(:/images/icon/expand_hover.png);}
+QPushButton:pressed { width: 32px; height: 17px; border-image: url(:/images/icon/expand_pressed.png);}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_collapse">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { width: 32px; height: 17px; border-image: url(:/images/icon/collapse_normal.png);}
+QPushButton:hover { width: 32px; height: 17px; border-image: url(:/images/icon/collapse_hover.png);}
+QPushButton:pressed { width: 32px; height: 17px; border-image: url(:/images/icon/collapse_pressed.png);}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_delete">
+       <property name="styleSheet">
+        <string notr="true">QPushButton { width: 32px; height: 17px; border-image: url(:/images/icon/delete_normal.png);}
+QPushButton:hover { width: 32px; height: 17px; border-image: url(:/images/icon/delete_hover.png);}
+QPushButton:pressed { width: 32px; height: 17px; border-image: url(:/images/icon/delete_pressed.png);}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

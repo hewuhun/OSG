@@ -1,0 +1,65 @@
+QWidget { color:white; font-family:"Microsoft YaHei"; font-size:14px;}
+QWidget#widget_titleBar { border-image: url(:/images/tree/hTitleBar_back.png); background: transparent;}
+
+QPushButton#btn_titleBarHide { background: transparent; image: url(:/images/tree/hideBtn.png);}
+QPushButton#btn_titleBarHide:hover { background: transparent; image: url(:/images/tree/hideBtn_hover.png);}
+
+QTreeView { background: transparent; font-family:"Microsoft YaHei"; font-size:14px;outline:0xp;}
+QTreeView:!no-frame { border: none;}
+QTreeView::item { width: 200px; color: white; border: none; padding-top: 2px; padding-bottom: 2px;}
+QTreeView::item:selected { border: 1px solid rgb(255,210,0);}
+QTreeView::item:hover { border: 1px solid #937313;}
+QTreeView::branch:has-children:open { image: url(:/images/tree/tree_open.png);}
+QTreeView::branch:has-children:hover:open { image: url(:/images/tree/tree_open_hover.png);}
+QTreeView::branch:has-children:closed { image: url(:/images/tree/tree_close.png);}
+QTreeView::branch:has-children:hover:closed { image: url(:/images/tree/tree_close_hover.png);}
+QTreeView::indicator:enabled:partiallychecked { image: url(:/images/tree/part_checked.png);}
+QTreeView::indicator:enabled:unchecked { image: url(:/images/tree/item_uncheck.png);}
+QTreeView::indicator:enabled:unchecked:hover { image: url(:/images/tree/item_uncheck_hover.png);}
+QTreeView::indicator:enabled:checked { image: url(:/images/tree/item_check.png);}
+QTreeView::indicator:enabled:checked:hover { image: url(:/images/tree/item_check_hover.png);}
+
+QScrollBar { background: transparent; border: 1px solid rgb(44,80,114);}
+QScrollBar::add-page, QScrollBar::sub-page { background: transparent;}
+QScrollBar::add-line, QScrollBar::sub-line { border: 1px solid rgb(44,80,114); background: rgb(12,22,32); width: 10px; height: 10px; subcontrol-origin: margin;}
+
+QScrollBar:horizontal { height: 12px; margin: 0px 11px; border-bottom: none;}
+QScrollBar::handle:horizontal { height: 10px; border: 1px solid rgb(1,53,101);}
+QScrollBar::handle:horizontal { background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(23, 44, 73, 255), stop:1 rgba(45, 84, 125, 255));}
+QScrollBar::handle:horizontal:hover { background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(10, 50, 104, 255), stop:1 rgba(80, 150, 223, 255));}
+QScrollBar::handle:horizontal:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(23, 44, 73, 255), stop:1 rgba(45, 84, 125, 255));}
+QScrollBar::add-line:horizontal { subcontrol-position: right;}
+QScrollBar::sub-line:horizontal { subcontrol-position: left;}
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal { width: 6px; height: 8px;}
+QScrollBar::left-arrow:horizontal { image: url(:/images/tree/hScrollBar_left.png);}
+QScrollBar::left-arrow:horizontal:hover { image: url(:/images/tree/hScrollBar_left_hover.png);}
+QScrollBar::right-arrow:horizontal { image: url(:/images/tree/hScrollBar_right.png);}
+QScrollBar::right-arrow:horizontal:hover { image: url(:/images/tree/hScrollBar_right_hover.png);}
+
+QScrollBar:vertical { width: 12px; margin: 11px 0px; border-right: none;}
+QScrollBar::handle:vertical { width: 10px; border: 1px solid rgb(1,53,101);}
+QScrollBar::handle:vertical { background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(23, 44, 73, 255), stop:1 rgba(45, 84, 125, 255));}
+QScrollBar::handle:vertical:hover { background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(10, 50, 104, 255), stop:1 rgba(80, 150, 223, 255));}
+QScrollBar::handle:vertical:pressed { background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(23, 44, 73, 255), stop:1 rgba(45, 84, 125, 255));}
+QScrollBar::add-line:vertical { subcontrol-position: bottom;}
+QScrollBar::sub-line:vertical { subcontrol-position: top;}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical { width: 8px; height: 6px;}
+QScrollBar::up-arrow:vertical { image: url(:/images/tree/vScrollBar_up.png);}
+QScrollBar::up-arrow:vertical:hover { image: url(:/images/tree/vScrollBar_up_hover.png);}
+QScrollBar::down-arrow:vertical { image: url(:/images/tree/vScrollBar_down.png);}
+QScrollBar::down-arrow:vertical:hover { image: url(:/images/tree/vScrollBar_down_hover.png);}
+
+QTableView { background: transparent; font-family:"Microsoft YaHei"; font-size:14px;}
+QTableView:!no-frame { border: 1px solid rgb(44,80,114);}
+QTableView::item { color: white; border-top: 1px solid rgb(44,80,114); padding-top: 10px; padding-bottom: 10px; padding-left: 2px;}
+QTableView::item:hover { border-image: url(:/images/tree/vTitleBar_back_hover.png);}
+
+QMenuBar { background-color:transparent; color:white; text-align:center; font-size:16px; font-family:"微软雅黑";}
+QMenuBar::item { padding: 8px 18px 10px 18px; background-color:transparent;}
+QMenuBar::item:selected { background-image:url(:/images/menu/menu_hover.png); border: 0px solid;}
+QMenuBar::item:pressed { background-image:url(); background-color:rgba(17,33,48,255); border: 1px solid rgba(0,160,233,255); border-bottom: 0px solid transparent;}
+QMenu { background-color: rgba(12, 22, 32, 230); border:1px solid rgba(0,160,233,255); font-size:14px; font-family:"微软雅黑";}
+QMenu::item { background-color:rgba(17,33,48,255); padding:0px 10px 0px 18px; margin-top:1px; margin-left:2px; margin-right:2px; margin-bottom:1px; color:white; height:30px; min-width:150px;}
+QMenu::item:selected { background-image:url(:/images/menu/menu_hover.png);}
+QMenu::item:pressed { background-image:url(:/images/menu/menu_hover.png);}
+QToolButton { border:0px;}

@@ -1,0 +1,83 @@
+<RCC>
+  <qresource prefix="/">
+    <file>images/boot_screen.png</file>
+    <file>images/satellite.png</file>
+    <file>images/rocket_screen.png</file>
+    <file>images/plane_screen.png</file>
+
+    <file>images/test.ico</file>
+    <file>images/free_earth.png</file>
+    <file>images/delete.png</file>
+    <file>images/open.png</file>
+    <file>images/save.png</file>
+    <file>images/exit.png</file>
+
+    <file>images/add_elevation.png</file>
+    <file>images/add_imagery.png</file>
+    <file>images/add_feature.png</file>
+
+    <file>images/elevation_layer.png</file>
+    <file>images/feature_layer.png</file>
+    <file>images/imagery_layer.png</file>
+    <file>images/effect_layer.png</file>
+    <file>images/folder.png</file>
+
+    <file>images/add_folder.png</file>
+    <file>images/add_point.png</file>
+    <file>images/add_line.png</file>
+    <file>images/add_polygon.png</file>
+    <file>images/add_model.png</file>
+    <file>images/add_image_view.png</file>
+    <file>images/add_image_overlay.png</file>
+    <file>images/close_list.png</file>
+    <file>images/open_list.png</file>
+    <file>images/more_vector_mark.png</file>
+    
+    <file>images/min_logo.png</file>
+
+    
+    <file>images/VectorMark.png</file>
+    <file>images/GJB.png</file>
+    <file>images/model.png</file>
+
+    <file>images/language.png</file>
+    <file>images/serch.png</file>
+    <file>images/blackboard.png</file>
+    <file>images/drop_screen.png</file>
+
+    <file>images/map_scale.png</file>
+    <file>images/navigator.png</file>
+    <file>images/air_view.png</file>
+    <file>images/buttom_info.png</file>
+    <file>images/minlogo.png</file>
+    <file>images/IR.png</file>
+    <file>images/celestial_reference.png</file>
+    <file>images/fullscreen.png</file>
+
+    <file>images/light.png</file>
+    <file>images/sky.png</file>
+    <file>images/atmosphere.png</file>
+    <file>images/rain.png</file>
+    <file>images/snow.png</file>
+    <file>images/cloud.png</file>
+    <file>images/ocean.png</file>
+    <file>images/setting.png</file>
+
+    <file>images/space_distance.png</file>
+    <file>images/surface_distance.png</file>
+    <file>images/space_area.png</file>
+    <file>images/height_distance.png</file>
+    <file>images/visibility_analysis.png</file>
+    <file>images/perspective_analysis.png</file>
+    <file>images/fillcut_analysis.png</file>
+    <file>images/flood_analysis.png</file>
+    <file>images/profile_analysis.png</file>
+    <file>images/lock.png</file>
+    <file>images/unlock.png</file>
+
+    <file>images/branch-end.png</file>
+    <file>images/branch-more.png</file>
+    <file>images/vline.png</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,56 @@
+QMenuBar
+{
+	background-color:transparent;
+	color:white; 
+	text-align:center; 
+	font-size:16px;
+	font-family:"Î¢ÈíÑÅºÚ";
+}
+QMenuBar::item
+{
+	padding: 8px 18px 10px 18px;
+	background-color:transparent;
+}
+QMenuBar::item:selected
+{
+	background-image:url(:/images/menu/menu_hover.png);
+	border: 0px solid; 
+}
+QMenuBar::item:pressed
+{
+	background-image:url();
+	background-color:rgba(17,33,48,255);
+	border: 1px solid rgba(0,160,223,255); 
+	border-bottom: 0px solid transparent;
+}
+QMenu
+{
+	background-color: rgba(12, 22, 32, 220);
+	border:1px solid rgba(0,160,223,255); 
+	font-size:14px;
+	font-family:"Î¢ÈíÑÅºÚ";
+}
+QMenu::item
+{
+	background-color:rgba(17,33,48,255);
+	padding:0px 10px 0px 18px;
+	margin-top:1px; 
+	margin-left:2px; 
+	margin-right:2px; 
+	margin-bottom:1px; 
+	color:white;
+	height:30px;
+	min-width:150px;
+}
+QMenu::item:selected
+{
+	background-image:url(:/images/menu/menu_hover.png);
+}
+QMenu::item:pressed
+{
+	background-image:url(:/images/menu/menu_hover.png);
+}
+QToolButton
+{	
+	border:0px;
+}
