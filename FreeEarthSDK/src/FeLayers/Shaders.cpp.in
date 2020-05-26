@@ -1,0 +1,13 @@
+#include <FeLayers/Shaders.h>
+
+namespace FeLayers
+{
+	Shaders::Shaders()
+	{
+	    NormalMapEffect_Vertex = "NormalMapEffect.vert.glsl";
+	    _sources[NormalMapEffect_Vertex] = OE_MULTILINE(@NormalMapEffect.vert.glsl@);
+	
+	    NormalMapEffect_Fragment = "NormalMapEffect.frag.glsl";
+	    _sources[NormalMapEffect_Fragment] = OE_MULTILINE(@NormalMapEffect.frag.glsl@);
+	}
+}

@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/background.png</file>
+        <file>images/menu_background.png</file>
+        <file>images/dialog_background.png</file>
+		
+        <file>images/logo.png</file>
+
+        <file>images/combox_background.png</file>
+		
+        <file>images/close_hover.png</file>
+        <file>images/mini_hover.png</file>
+        <file>images/normal_hover.png</file>
+        <file>images/close_normal.png</file>
+        <file>images/mini_normal.png</file>
+        <file>images/normal_normal.png</file>		
+        <file>images/close_press.png</file>
+        <file>images/mini_press.png</file>
+        <file>images/normal_press.png</file>
+
+        <file>images/radioBtn_checked.png</file>
+        <file>images/radioBtn_checked_hover.png</file>
+        <file>images/radioBtn_checked_pressed.png</file>
+        <file>images/radioBtn_unchecked.png</file>
+        <file>images/radioBtn_unchecked_hover.png</file>
+        <file>images/radioBtn_unchecked_pressed.png</file>
+
+        <file>images/checkBox_checked.png</file>
+        <file>images/checkBox_checked_hover.png</file>
+        <file>images/checkBox_checked_pressed.png</file>
+        <file>images/checkBox_unchecked.png</file>
+        <file>images/checkBox_unchecked_hover.png</file>
+        <file>images/checkBox_unchecked_pressed.png</file>
+      
+        <file>images/up.png</file>
+        <file>images/up_hover.png</file>
+        <file>images/up_pressed.png</file>
+        <file>images/down.png</file>
+        <file>images/down_hover.png</file>
+        <file>images/down_pressed.png</file>
+      
+        <file>images/spinBox_up.png</file>
+        <file>images/spinBox_up_hover.png</file>
+        <file>images/spinBox_up_pressed.png</file>
+        <file>images/spinBox_down.png</file>
+        <file>images/spinBox_down_hover.png</file>
+        <file>images/spinBox_down_pressed.png</file>
+    </qresource>
+</RCC>

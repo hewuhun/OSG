@@ -1,0 +1,7 @@
+﻿#ifndef TRITON_VERSION_H
+#define TRITON_VERSION_H
+
+#define TRITON_MAJOR_VERSION 3
+#define TRITON_MINOR_VERSION 47
+
+#endif

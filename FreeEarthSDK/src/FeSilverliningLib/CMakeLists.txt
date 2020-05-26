@@ -1,0 +1,209 @@
+set(OUT_NAME FeSilverliningLib)
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+SET(PROJECT_INCLUDE ${CMAKE_SOURCE_DIR}/include/FeSilverliningLib)
+SET(PROJECT_SRC ${CMAKE_SOURCE_DIR}/src/FeSilverliningLib)
+
+###########################################################################
+#                                                                         #
+#                            SILVERLINING_LIB							  #
+#                                                                         #
+###########################################################################
+set(SILVERLINING_LIB_H
+        ${PROJECT_INCLUDE}/Export.h
+		${PROJECT_INCLUDE}/ArHosekSkyModelData_CIEXYZ.h
+		${PROJECT_INCLUDE}/AtmosphereFromSpace.h
+		${PROJECT_INCLUDE}/AtmosphereSegment.h
+		${PROJECT_INCLUDE}/Billboard.h
+		${PROJECT_INCLUDE}/CirroCumulusCloud.h
+		${PROJECT_INCLUDE}/CirroCumulusLayer.h
+		${PROJECT_INCLUDE}/CirrusCloud.h
+		${PROJECT_INCLUDE}/CirrusCloudLayer.h
+		${PROJECT_INCLUDE}/Cloud.h
+		${PROJECT_INCLUDE}/CloudBackdrop.h
+		${PROJECT_INCLUDE}/CloudBackdropManager.h
+		${PROJECT_INCLUDE}/CloudDistributor.h
+		${PROJECT_INCLUDE}/CloudDistributorFactory.h
+		${PROJECT_INCLUDE}/CloudDistributorRandom.h
+		${PROJECT_INCLUDE}/CloudDistributorRandomFast.h
+		${PROJECT_INCLUDE}/CloudGenerator.h
+		${PROJECT_INCLUDE}/CloudGeneratorExponential.h
+		${PROJECT_INCLUDE}/CloudGeneratorFactory.h
+		${PROJECT_INCLUDE}/CloudGeneratorRandom.h
+		${PROJECT_INCLUDE}/CloudImposter.h
+		${PROJECT_INCLUDE}/Configuration.h
+		${PROJECT_INCLUDE}/CrepuscularRays.h
+		${PROJECT_INCLUDE}/CumulonimbusCloud.h
+		${PROJECT_INCLUDE}/CumulonimbusCloudLayer.h
+		${PROJECT_INCLUDE}/CumulusCloud.h
+		${PROJECT_INCLUDE}/CumulusCloudLayer.h
+		${PROJECT_INCLUDE}/CumulusCongestusCloud.h
+		${PROJECT_INCLUDE}/CumulusCongestusCloudLayer.h
+		${PROJECT_INCLUDE}/CumulusMediocrisCloud.h
+		${PROJECT_INCLUDE}/CumulusMediocrisCloudLayer.h
+		${PROJECT_INCLUDE}/DefaultRandomNumberGenerator.h
+		${PROJECT_INCLUDE}/EnvironmentMap.h
+		${PROJECT_INCLUDE}/Ephemeris.h
+		${PROJECT_INCLUDE}/Glare.h
+		${PROJECT_INCLUDE}/IndexBuffer.h
+		${PROJECT_INCLUDE}/LensFlare.h
+		${PROJECT_INCLUDE}/LicenseManager.h
+		${PROJECT_INCLUDE}/Lightning.h
+		${PROJECT_INCLUDE}/LuminanceMapper.h
+		${PROJECT_INCLUDE}/LunarSpectrum.h
+		${PROJECT_INCLUDE}/Metaball.h
+		${PROJECT_INCLUDE}/mie.h
+		${PROJECT_INCLUDE}/Mutex.h
+		${PROJECT_INCLUDE}/Precipitation.h
+		${PROJECT_INCLUDE}/PrecipitationManager.h
+		${PROJECT_INCLUDE}/Profiler.h
+		${PROJECT_INCLUDE}/Rain.h
+		${PROJECT_INCLUDE}/Renderable.h
+		${PROJECT_INCLUDE}/Renderer.h
+		${PROJECT_INCLUDE}/ShadowMap.h
+		${PROJECT_INCLUDE}/Sky.h
+		${PROJECT_INCLUDE}/Sleet.h
+		${PROJECT_INCLUDE}/Snow.h
+		${PROJECT_INCLUDE}/SolarSpectrum.h
+                ${PROJECT_INCLUDE}/Spectrum.h
+		${PROJECT_INCLUDE}/starcat.h
+		${PROJECT_INCLUDE}/Stars.h
+		${PROJECT_INCLUDE}/StratocumulusCloud.h
+		${PROJECT_INCLUDE}/StratocumulusCloudLayer.h
+		${PROJECT_INCLUDE}/StratusCloud.h
+		${PROJECT_INCLUDE}/StratusCloudLayer.h
+		${PROJECT_INCLUDE}/TGALoader.h
+		${PROJECT_INCLUDE}/ToweringCumulusCloud.h
+		${PROJECT_INCLUDE}/ToweringCumulusCloudLayer.h
+		${PROJECT_INCLUDE}/Utils.h
+		${PROJECT_INCLUDE}/VertexBuffer.h
+		${PROJECT_INCLUDE}/Virga.h
+		${PROJECT_INCLUDE}/Voxel.h
+		${PROJECT_INCLUDE}/Atmosphere.h
+		${PROJECT_INCLUDE}/AtmosphericConditions.h
+		${PROJECT_INCLUDE}/CloudLayer.h
+		${PROJECT_INCLUDE}/CloudLayerFactory.h
+		${PROJECT_INCLUDE}/CloudTypes.h
+		${PROJECT_INCLUDE}/Color.h
+		${PROJECT_INCLUDE}/Frustum.h
+		${PROJECT_INCLUDE}/LightningListener.h
+		${PROJECT_INCLUDE}/LocalTime.h
+		${PROJECT_INCLUDE}/Location.h
+		${PROJECT_INCLUDE}/Matrix3.h
+		${PROJECT_INCLUDE}/Matrix4.h
+		${PROJECT_INCLUDE}/MemAlloc.h
+		${PROJECT_INCLUDE}/MillisecondTimer.h
+		${PROJECT_INCLUDE}/Plane.h
+		${PROJECT_INCLUDE}/RandomNumberGenerator.h
+		${PROJECT_INCLUDE}/ResourceLoader.h
+		${PROJECT_INCLUDE}/SilverLining.h
+		${PROJECT_INCLUDE}/SilverLining_Vertex_Solution_Defines.h
+		${PROJECT_INCLUDE}/SilverLiningDLLCommon.h
+		${PROJECT_INCLUDE}/SilverLiningTypes.h
+		${PROJECT_INCLUDE}/Vector3.h
+		${PROJECT_INCLUDE}/Vector4.h
+		${PROJECT_INCLUDE}/Version.h
+		${PROJECT_INCLUDE}/Vertex.h
+		${PROJECT_INCLUDE}/WindVolume.h
+	)
+
+set(SILVERLINING_LIB_CPP
+		${PROJECT_SRC}/Atmosphere.cpp
+		${PROJECT_SRC}/AtmosphereFromSpace.cpp
+		${PROJECT_SRC}/AtmosphereSegment.cpp
+		${PROJECT_SRC}/AtmosphericConditions.cpp
+		${PROJECT_SRC}/Billboard.cpp
+		${PROJECT_SRC}/CirroCumulusCloud.cpp
+		${PROJECT_SRC}/CirroCumulusLayer.cpp
+		${PROJECT_SRC}/CirrusCloud.cpp
+		${PROJECT_SRC}/CirrusCloudLayer.cpp
+		${PROJECT_SRC}/Cloud.cpp
+		${PROJECT_SRC}/CloudBackdrop.cpp
+		${PROJECT_SRC}/CloudBackdropManager.cpp
+		${PROJECT_SRC}/CloudDistributorFactory.cpp
+		${PROJECT_SRC}/CloudDistributorRandom.cpp
+		${PROJECT_SRC}/CloudDistributorRandomFast.cpp
+		${PROJECT_SRC}/CloudGeneratorExponential.cpp
+		${PROJECT_SRC}/CloudGeneratorFactory.cpp
+		${PROJECT_SRC}/CloudGeneratorRandom.cpp
+		${PROJECT_SRC}/CloudImposter.cpp
+		${PROJECT_SRC}/CloudLayer.cpp
+		${PROJECT_SRC}/CloudLayerFactory.cpp
+		${PROJECT_SRC}/Configuration.cpp
+		${PROJECT_SRC}/CrepuscularRays.cpp
+		${PROJECT_SRC}/CumulonimbusCloud.cpp
+		${PROJECT_SRC}/CumulonimbusCloudLayer.cpp
+		${PROJECT_SRC}/CumulusCloud.cpp
+		${PROJECT_SRC}/CumulusCloudLayer.cpp
+		${PROJECT_SRC}/CumulusCongestusCloud.cpp
+		${PROJECT_SRC}/CumulusCongestusCloudLayer.cpp
+		${PROJECT_SRC}/CumulusMediocrisCloud.cpp
+		${PROJECT_SRC}/CumulusMediocrisCloudLayer.cpp
+		${PROJECT_SRC}/DefaultRandomNumberGenerator.cpp
+		${PROJECT_SRC}/EnvironmentMap.cpp
+		${PROJECT_SRC}/Ephemeris.cpp
+		${PROJECT_SRC}/Glare.cpp
+		${PROJECT_SRC}/IndexBuffer.cpp
+		${PROJECT_SRC}/LensFlare.cpp
+		${PROJECT_SRC}/LicenseManager.cpp
+		${PROJECT_SRC}/Lightning.cpp
+		${PROJECT_SRC}/LocalTime.cpp
+		${PROJECT_SRC}/Location.cpp
+		${PROJECT_SRC}/LuminanceMapper.cpp
+		${PROJECT_SRC}/LunarSpectrum.cpp
+		${PROJECT_SRC}/Matrix3.cpp
+		${PROJECT_SRC}/Matrix4.cpp
+		${PROJECT_SRC}/MemAlloc.cpp
+		${PROJECT_SRC}/Metaball.cpp
+		${PROJECT_SRC}/MillisecondTimer.cpp
+		${PROJECT_SRC}/PrecipitationManager.cpp
+		${PROJECT_SRC}/Profiler.cpp
+		${PROJECT_SRC}/Rain.cpp
+		${PROJECT_SRC}/Renderer.cpp
+		${PROJECT_SRC}/ResourceLoader.cpp
+		${PROJECT_SRC}/ShadowMap.cpp
+		${PROJECT_SRC}/Sky.cpp
+		${PROJECT_SRC}/Sleet.cpp
+		${PROJECT_SRC}/Snow.cpp
+		${PROJECT_SRC}/SolarSpectrum.cpp
+		${PROJECT_SRC}/Spectrum.cpp
+		${PROJECT_SRC}/Stars.cpp
+		${PROJECT_SRC}/StratocumulusCloudLayer.cpp
+		${PROJECT_SRC}/StratusCloud.cpp
+		${PROJECT_SRC}/StratusCloudLayer.cpp
+		${PROJECT_SRC}/TGALoader.cpp
+		${PROJECT_SRC}/ToweringCumulusCloud.cpp
+		${PROJECT_SRC}/ToweringCumulusCloudLayer.cpp
+		${PROJECT_SRC}/Utils.cpp
+		${PROJECT_SRC}/VertexBuffer.cpp
+		${PROJECT_SRC}/Virga.cpp
+		${PROJECT_SRC}/Voxel.cpp
+	)
+
+    if(${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+    add_definitions(-D_DEBUG)
+    endif()
+
+if(${BUILD_SHARED_LIBS} STREQUAL "On")
+    add_library(${OUT_NAME} SHARED ${SRC} ${SILVERLINING_LIB_H} ${SILVERLINING_LIB_CPP})
+    ADD_DEFINITIONS(-DFESILVERLININGLIB_LIBRARY)
+else()
+    add_library(${OUT_NAME} STATIC ${SRC} ${SILVERLINING_LIB_H} ${SILVERLINING_LIB_CPP})
+    ADD_DEFINITIONS(-DFESILVERLININGLIB_LIBRARY_STATIC)
+endif()
+
+if(WIN32)
+target_link_libraries(
+	${OUT_NAME} 
+	${OPENGL_LIBRARIES}
+	)
+else()
+target_link_libraries(
+	${OUT_NAME}
+	${OPENGL_LIBRARIES}
+	)
+endif()
+
+INSTALL(TARGETS ${OUT_NAME}  DESTINATION lib)
+INSTALL(TARGETS ${OUT_NAME}  DESTINATION bin)
+

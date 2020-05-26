@@ -1,0 +1,100 @@
+
+SET(FREEEARTH_DIR "" CACHE PATH "Set to base FreeEarth install path")
+MACRO( FIND_FREEEARTH_INCLUDE THIS_FREEEARTH_INCLUDE_DIR THIS_FREEEARTH_INCLUDE_FILE )
+
+FIND_PATH( ${THIS_FREEEARTH_INCLUDE_DIR} ${THIS_FREEEARTH_INCLUDE_FILE}
+    PATHS
+        ${FREEEARTH_DIR}
+        $ENV{FREEEARTH_SOURCE_DIR}
+        $ENV{FREEEARTHDIR}
+        $ENV{FREEEARTH_DIR}
+        /usr/local/
+        /usr/
+        /sw/ # Fink
+        /opt/local/ # DarwinPorts
+        /opt/csw/ # Blastwave
+        /opt/
+        [HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session\ Manager\\Environment;FREEEARTH_ROOT]/
+        ~/Library/Frameworks
+        /Library/Frameworks
+    PATH_SUFFIXES
+        /include/
+)
+
+ENDMACRO( FIND_FREEEARTH_INCLUDE THIS_FREEEARTH_INCLUDE_DIR THIS_FREEEARTH_INCLUDE_FILE )
+
+FIND_FREEEARTH_INCLUDE( FREEEARTH_INCLUDE_DIR       FeUtils/Version.h )
+
+###### libraries ######
+
+MACRO( FIND_FREEEARTH_LIBRARY MYLIBRARY MYLIBRARYNAME )
+
+FIND_LIBRARY(${MYLIBRARY}
+    NAMES
+        ${MYLIBRARYNAME}
+    PATHS
+        ${FREEEARTH_DIR}
+        $ENV{FREEEARTH_BUILD_DIR}
+        $ENV{FREEEARTH_DIR}
+        $ENV{FREEEARTHDIR}
+        $ENV{OSG_ROOT}
+        $ENV{OSGEARTH_ROOT}
+        ~/Library/Frameworks
+        /Library/Frameworks
+        /usr/local
+        /usr
+        /sw
+        /opt/local
+        /opt/csw
+        /opt
+        [HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session\ Manager\\Environment;FREEEARTH_ROOT]/lib
+        /usr/freeware
+    PATH_SUFFIXES
+        /lib/
+        /lib64/
+        /build/lib/
+        /build/lib64/
+        /Build/lib/
+        /Build/lib64/
+     )
+
+ENDMACRO(FIND_FREEEARTH_LIBRARY LIBRARY LIBRARYNAME)
+
+FIND_FREEEARTH_LIBRARY( FeShell_DEBUG_LIBRARIES   		  FeShelld)
+FIND_FREEEARTH_LIBRARY( FeEarth_DEBUG_LIBRARIES   	  	  FeEarthd)
+FIND_FREEEARTH_LIBRARY( FeUtils_DEBUG_LIBRARIES           FeUtilsd)
+
+FIND_FREEEARTH_LIBRARY( FeExtNode_DEBUG_LIBRARIES         FeExtNoded)
+FIND_FREEEARTH_LIBRARY( FeLayers_DEBUG_LIBRARIES          FeLayersd)
+FIND_FREEEARTH_LIBRARY( FeMeasure_DEBUG_LIBRARIES         FeMeasured)
+FIND_FREEEARTH_LIBRARY( FeKits_DEBUG_LIBRARIES  		  FeKitsd)
+
+FIND_FREEEARTH_LIBRARY( FeOcean_DEBUG_LIBRARIES           FeOceand)
+FIND_FREEEARTH_LIBRARY( FeSilverlining_DEBUG_LIBRARIES    FeSilverliningd)
+FIND_FREEEARTH_LIBRARY( FeEffects_DEBUG_LIBRARIES         FeEffectsd)
+
+
+
+
+FIND_FREEEARTH_LIBRARY( FeShell_RELEASE_LIBRARIES   	  FeShell)
+FIND_FREEEARTH_LIBRARY( FeEarth_RELEASE_LIBRARIES   	  FeEarth)
+FIND_FREEEARTH_LIBRARY( FeUtils_RELEASE_LIBRARIES         FeUtils)
+
+FIND_FREEEARTH_LIBRARY( FeExtNode_RELEASE_LIBRARIES       FeExtNode)
+FIND_FREEEARTH_LIBRARY( FeLayers_RELEASE_LIBRARIES          FeLayers)
+FIND_FREEEARTH_LIBRARY( FeMeasure_RELEASE_LIBRARIES       FeMeasure)
+FIND_FREEEARTH_LIBRARY( FeKits_RELEASE_LIBRARIES  		  FeKits)
+
+FIND_FREEEARTH_LIBRARY( FeOcean_RELEASE_LIBRARIES         FeOcean)
+FIND_FREEEARTH_LIBRARY( FeSilverlining_RELEASE_LIBRARIES  FeSilverlining)
+FIND_FREEEARTH_LIBRARY( FeEffects_RELEASE_LIBRARIES       FeEffects)
+
+
+SET( FREEEARTH_FOUND "NO" )
+IF( FREEEARTH_LIBRARY AND FREEEARTH_INCLUDE_DIR )
+    SET( FREEEARTH_FOUND "YES" )
+    SET( FREEEARTH_INCLUDE_DIRS ${FREEEARTH_INCLUDE_DIR})
+    GET_FILENAME_COMPONENT( FREEEARTH_LIBRARIES_DIR ${FREEEARTH_LIBRARY} PATH )
+ENDIF( FREEEARTH_LIBRARY AND FREEEARTH_INCLUDE_DIR )
+
+
